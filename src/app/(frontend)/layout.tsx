@@ -1,9 +1,21 @@
 import './styles.css'
-import { Toaster } from '@/components/ui/sonner'
 
 export const metadata = {
-  description: 'A blank template using Payload in a Next.js app.',
-  title: 'Payload Blank Template',
+  description:
+    'Explore my professional journey through an interactive terminal interface. Built with Next.js, Payload CMS, and shadcn.',
+  title: 'Anis Boulila | Terminal Portfolio',
+  applicationName: 'terminal portfolio',
+  keywords: [
+    'Anis',
+    'Full-Stack Developer',
+    'Next.js',
+    'headless cms',
+    'Payload CMS',
+    'Terminal Portfolio',
+    'Software Engineer Tunisia',
+  ],
+  authors: [{ name: 'Anis' }],
+  creator: 'Anis Boulila',
 }
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
@@ -13,7 +25,6 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
     <html lang="en" className="dark" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <main>{children}</main>
-        <Toaster/>
       </body>
     </html>
   )
