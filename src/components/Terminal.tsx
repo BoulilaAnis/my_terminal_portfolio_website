@@ -87,7 +87,9 @@ export default function Terminal() {
           <div key={i}>
             {typeof h === 'object' && h.type === 'command' ? (
               <Prompt command={h.value} />
+              
             ) : (
+              
               <TypingLine text={h} />
             )}
           </div>
@@ -100,7 +102,7 @@ export default function Terminal() {
           ref={inputRef}
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="!border-none !shadow-none !ring-0 !ring-offset-0 !outline-none bg-transparent p-0 text-xl font-bold h-auto w-full text-chart-5"
+          className="!border-none !shadow-none !ring-0 !ring-offset-0 !outline-none bg-transparent p-0 text-xs md:text-xl font-bold h-auto w-full text-chart-5"
           placeholder=""
           autoFocus
           spellCheck={false}
