@@ -29,7 +29,6 @@ export default function TypingLine({ text }: { text: any }) {
 
   const renderColorized = (content: string) => {
     return content.split('\n').map((line, i) => {
-      // Regex to find: "> command - description"
       const match = line.match(/^(\s*>\s*)([\w-]+)(\s*-.*)$/)
 
       if (match) {
